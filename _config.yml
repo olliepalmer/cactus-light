@@ -1,16 +1,23 @@
 nav:
-  Home: /
-  About: /about/
-  Writing: /archives/
-  Projects: http://github.com/gabithume
+  Contact: /#contact
+  Profile: /#profile
+  Education: /#education
+  Teaching: /#teaching
+  Work: /#work
+  Exhibitions: /#exhibitions
+  Awards: /#awards
+  Talks: /#talks
+  Press: /#press
+  # these can be whatever you like
+  # but they must match your div ids!
 
-projects_url: http://github.com/gabithume
+projects_url: http://github.com/olliepalmer
 
 customize:
     gravatar:
         email:
     logo:
-        enabled: true
+        enabled: false
         width: 50
         height: 50
         url: /images/logo.png
@@ -27,12 +34,10 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/gabithume/cactus-light
-        twitter: /
-        facebook: /
-        linkedin: /
-    show_all_posts: false
-    post_count: 5
+        github: http://github.com/olliepalmer
+        twitter: https://twitter.com/_olliepalmer
+    show_all_posts: true
+    post_count: 100
     highlight: monokai
 
 # RSS
@@ -41,7 +46,7 @@ rss: false
 # Plugins
 plugins:
     disqus_shortname: # Disqus Comments Shortname
-    google_analytics: UA-86660611-1 # enter the tracking ID for your Google Analytics
+    google_analytics: UA-1963104-15 # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
 miscellaneous:

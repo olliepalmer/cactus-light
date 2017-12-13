@@ -1,10 +1,18 @@
-# Cactus Light
+# CV
 
-A responsive, light and simple [Hexo](http://hexo.io) theme for a personal website. Based on the original [Cactus Dark](https://github.com/probberechts/cactus-dark) theme by [Pieter Robberechts](https://github.com/probberechts).
+This [Hexo](http://hexo.io) theme is designed for a CV. It's based on Cactus Light, a variant of Cactus Dark. I've modified the theme to make it suitable for a one-page CV that anybody can use. Thanks to [Pieter Robberechts](https://github.com/probberechts)' original work, and [Gabriela Thumé](https://github.com/gabithume)'s derivative theme, it's fully responsive. 
 
-:cactus: [Demo](http://gabithu.me)
+![](https://www.dropbox.com/s/hduj6dhlpsbqhbh/Screenshot%202017-12-13%2011.45.52.png?dl=1)
 
-![cactus-light](https://cloud.githubusercontent.com/assets/2175271/19885143/62e9269c-a01d-11e6-8e26-e36a36201d88.png)
+## Why?
+
+I've moved countries a few times in the past few years, and worked freelance my entire adult life. I have to update my CV all the time! Previously, I'd keep a text file with all of my information, put this into InDesign, and make it look nice. Then I'd realise that I forgot something crucial, and edit my text file or the InDesign file directly. I ended up with different versions, and having to manually check that I hadn't copied text from a less-complete previous version.
+
+In short, all of the type of problems that Git versioning can solve. This theme uses Hexo to take a series of MarkDown files for the various parts of my CV and turn them into simple HTML file which I can serve to the web. Now I only need to update one file, push it to GitHub, and the changes are live on the web.
+
+[Demo](http://cv.olliepalmer.com)
+
+
 
 ## Summary
 
@@ -23,7 +31,7 @@ A responsive, light and simple [Hexo](http://hexo.io) theme for a personal websi
 
 - Fully responsive
 - Disqus
-- Googe analytics
+- Google analytics
 - Font Awesome icons
 - Pick your own code highlighting scheme
 - Configurable navigation menu
@@ -49,109 +57,38 @@ A responsive, light and simple [Hexo](http://hexo.io) theme for a personal websi
 
 ## Configuration
 
+If you want demo content, move the `_posts` folder from the `demo-content` into your `root/source` folder.
+
+
 ### Navigation
 
 Setup the navigation menu in the theme's `_config.yml`:
 
   ```
   nav:
-    Home: /
-    About: /about/
-    Writing: /archives/
-    Projects: http://github.com/gabithume
-    LINK_NAME: URL
+    Contact: /#contact
+    Profile: /#profile
+    Education: /#education
+    Teaching: /#teaching
+    Work: /#work
   ```
+Note that the links must match the page titles of each page, as set in the page's meta-section:
 
-### Blog posts list on home page
+```
+---
+title: contact
+order: 1
+---
 
-You have two options for the list of blog posts on the home page:
+## Contact
+ 
+123 Street Avenue, Townsville, Country, XX12 3XX
+Phone: +XX XXX XXXX
 
-  - Show only the 5 most recent posts (default)
+```
 
-  ```
-  customize:
-    show_all_posts: false
-    post_count: 5
-  ```
+Note that the title becomes a div id, and the order determines where on the page the section comes. You can create new sections and edit the current ones as much as you like. 
 
-  - Show all posts
-
-  ```
-  customize:
-    show_all_posts: true
-  ```
-
-### Projects list
-
-Create a projects file `source/_data/projects.json`.
-
-  ```json
-  [
-      {
-         "name":"Hexo",
-         "url":"https://hexo.io/",
-         "desc":"A fast, simple & powerful blog framework"
-      },
-      {
-         "name":"Font Awesome",
-         "url":"http://fontawesome.io/",
-         "desc":"The iconic font and CSS toolkit"
-      }
-  ]
-  ```
-
-### Social media links
-
-Cactus Light can automatically add links to your social media accounts. Therefore, update the theme's `_config.yml`:
-
-  ```
-  customize:
-    social_links:
-      github: your-github-url
-      twitter: your-twitter-url
-      NAME: your-NAME-url
-  ```
-
-where `NAME` is the name of a [Font Awesome icon](http://fontawesome.io/icons/#brand).
-
-### RSS
-
-Set the `rss` field in the theme's `_config.yml` to one of the following values:
-
-1. `rss: false` will totally disable rss (default).
-2. `rss: atom.xml` sets a specific feed link.
-3. `rss:`leave empty to use the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin.
-
-### Analytics
-
-Add you Google Analytics `tracking_id` to the theme's `_config.yml`.
-
-  ```
-  plugins:
-      gooogle_analytics: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-  ```
-
-### Comments
-
-First, create a site on Disqus: [https://disqus.com/admin/create/](http://disqus.com/admin/create/).
-
-Next, update the theme's `_config.yml` file:
-
-  ```
-  plugins:
-      disqus_shortname: SITENAME
-  ```
-
-where `SITENAME` is the name you gave your site on Disqus.
-
-### Code Highlighting
-
-Pick one of [the available colorschemes](https://github.com/gabithume/cactus-light/tree/master/source/css/_highlight) and add it to the theme's `_config.yml`:
-
-  ```
-  customize:
-      highlight: COLORSCHEME_NAME
-  ```
 
 ## License
 MIT

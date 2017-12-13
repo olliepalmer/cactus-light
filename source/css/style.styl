@@ -29,6 +29,13 @@ body
   flex-direction: column
   antialias()
 
+*::selection
+  background: dark0
+  color: light1
+*::-moz-selection
+  background: dark0
+  color: light1
+
 .content
   flex: 1
   @extend $base-style
@@ -51,7 +58,19 @@ body
     background: none
     &:hover
       color: $color-link
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    font-weight: 600
+    font-size: 1.5em
+    color: dark2
 
+  h2
+    margin-top: 4rem
   h1 a,
   .h1 a,
   h2 a,
@@ -69,8 +88,11 @@ body
   h3 a:hover,
   h4 a:hover,
   h5 a:hover,
-  h6 a:hover
-    underline(6px, $color-link)
+  h6 a:hover,
+  p a:hover
+    background: dark0
+    color: light1
+    // underline(6px, $color-link)
 
 @media (min-width: 540px)
   .image-wrap
@@ -84,7 +106,7 @@ body
 
 .width
   width: 100%
-  max-width: 39rem
+  max-width: 60rem
 
 @media (max-width: 480px)
   // smaller margins at smaller screen widths
@@ -97,7 +119,7 @@ body
 
 @media (min-width: 480px)
   p
-    text-align: justify
+    text-align: left
 
 @import "_extend"
 @import "_partial/header"
@@ -163,3 +185,7 @@ pre code
     text-align: right
     padding-right: 20px
     display: none
+    
+.chunk
+  margin-bottom: 2em
+  
