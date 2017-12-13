@@ -2,7 +2,7 @@
 
 This [Hexo](http://hexo.io) theme is designed for a CV. It's based on Cactus Light, a variant of Cactus Dark. I've modified the theme to make it suitable for a one-page CV that anybody can use. Thanks to [Pieter Robberechts](https://github.com/probberechts)' original work, and [Gabriela Thumé](https://github.com/gabithume)'s derivative theme, it's fully responsive. 
 
-![](images/screenshot.png)
+![CV Theme Image](source/images/screenshot.png)
 
 ## Why?
 
