@@ -8,7 +8,7 @@ This [Hexo](http://hexo.io) theme is designed for a CV. It's based on Cactus Lig
 
 I've moved countries a few times in the past few years, and worked freelance my entire adult life. I have to update my CV all the time! Previously, I'd keep a text file with all of my information, put this into InDesign, and make it look nice. Then I'd realise that I forgot something crucial, and edit my text file or the InDesign file directly. I ended up with different versions, and having to manually check that I hadn't copied text from a less-complete previous version.
 
-In short, all of the type of problems that Git versioning can solve. This theme uses Hexo to take a series of MarkDown files for the various parts of my CV and turn them into simple HTML file which I can serve to the web. Now I only need to update one file, push it to GitHub, and the changes are live on the web.
+In short, all of the type of problems that Git versioning can solve. This theme uses Hexo to take a series of MarkDown files for the various parts of my CV and turn them into simple HTML file which is pushed to GitHub, and from there to the web via Netlify. It makes managing my CV really easy!
 
 [Demo](http://cv.olliepalmer.com)
 
