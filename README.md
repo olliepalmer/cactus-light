@@ -1,6 +1,6 @@
 # CV
 
-This [Hexo](http://hexo.io) theme is designed for a CV. It's based on Cactus Light, a variant of Cactus Dark. I've modified the theme to make it suitable for a one-page CV that anybody can use. Thanks to [Pieter Robberechts](https://github.com/probberechts)' original work, and [Gabriela Thumé](https://github.com/gabithume)'s derivative theme, it's fully responsive. 
+This [Hexo](http://hexo.io) theme is designed for a CV. It's based on Cactus Light, a variant of Cactus Dark. I've modified the theme to make it suitable for a one-page CV that anybody can use. Thanks to [Pieter Robberechts](https://github.com/probberechts)' original work, and [Gabriela Thumé](https://github.com/gabithume)'s derivative theme, it's fully responsive. And it prints nicely, on all paper sizes.
 
 ![CV Theme Image](source/images/screenshot.png)
 
@@ -10,9 +10,7 @@ I've moved countries a few times in the past few years, and worked freelance my 
 
 In short, all of the type of problems that Git versioning can solve. This theme uses Hexo to take a series of MarkDown files for the various parts of my CV and turn them into simple HTML file which is pushed to GitHub, and from there to the web via Netlify. It makes managing my CV really easy!
 
-[Demo](http://cv.olliepalmer.com)
-
-
+👉️[Demo](http://cv.olliepalmer.com)
 
 ## Summary
 
@@ -39,6 +37,7 @@ In short, all of the type of problems that Git versioning can solve. This theme 
 - Simplicity
 
 ## Install
+
 1. In the `root` directory:
 
     ```git
@@ -81,13 +80,13 @@ order: 1
 ---
 
 ## Contact
- 
+
 123 Street Avenue, Townsville, Country, XX12 3XX
 Phone: +XX XXX XXXX
 
 ```
 
-Note that the title becomes a div id, and the order determines where on the page the section comes. You can create new sections and edit the current ones as much as you like. 
+Note that the title becomes a div id, and the order determines where on the page the section comes. You can create new sections and edit the current ones as much as you like.
 
 
 ## License
