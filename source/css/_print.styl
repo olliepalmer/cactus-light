@@ -1,0 +1,32 @@
+@media print
+  body
+    font-size: 10px
+    line-height: 1.5em
+    color: #000
+    background: #fff
+    font-family: $font-family-body
+    .content
+      width: 66%
+      margin-left: 33%
+
+      a
+        text-decoration: none
+        color: #000
+      h1, h2, h3, h4, h5, p, ul
+        display: block
+      blockquote
+        display: none
+      div.chunk
+        border-bottom: 1px solid #7f7f7f
+        padding-bottom: 15px
+        page-break-inside: avoid;
+
+
+
+  .content, .index, .width, .mx-auto, .px2, .my4
+    margin: 0
+    padding: 0
+
+
+  header, .header, footer, .footer
+    display: none
